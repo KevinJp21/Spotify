@@ -469,7 +469,7 @@ body{
     background-color: #1fdf64;
 }
 
-@keyframes buttonAnimation {
+@keyframes buttonAnimation {/*Animacion del boton*/
     from {
         transform: translateY(10%);
         opacity: 0;
