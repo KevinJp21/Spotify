@@ -440,8 +440,8 @@ body{
 }
 
 .btn-play{
-    width: 5rem;
-    height: 5rem;
+    width: 4.7rem;
+    height: 4.7rem;
 
     display: flex;
     justify-content: center;
@@ -452,8 +452,8 @@ body{
     outline: none;
     border-radius: 50%;
     position: absolute;
-    top: 55%;
-    left: 52%;
+    top: 45%;
+    left: 65%;
     transform: translate(50%, -50%);
     cursor: pointer;  
 
@@ -465,3 +465,28 @@ body{
     
 }
 
+.btn-play:hover{
+    background-color: #1fdf64;
+}
+
+@keyframes buttonAnimation {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonAnimationHide {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+}

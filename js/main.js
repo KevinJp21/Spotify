@@ -42,10 +42,12 @@ const createButton = card => {
 
 	card.addEventListener('mouseover', () => {
 		button.style.display = 'block';
+        button.style.animation = 'buttonAnimation 0.3s forwards';//animacion del botón al pasar cursor
+        
 	});
 
 	card.addEventListener('mouseout', () => {
-		button.style.display = 'none';
+        button.style.animation = 'buttonAnimationHide 0.3s forwards';//animacion del botón al desaparecer
 	});
 };
 
